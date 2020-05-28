@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/public/list.css" type="text/css">
+<body>
+    <div class="all">
+<table>
+   
+    <thead>
+        <tr>
+            <th>
+               <h2>FULLNAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2> 
+            </th>
+            <th>
+                <h2>&nbsp;&nbsp;TITLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            </th>
+            <th>
+                <h2>&nbsp;&nbsp; NOTE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullname}}<br><br><br></td>
+            <td>{{this.title}}<br><br><br></td>
+            <td>{{this.note}}<br><br><br></td>
+            <td>
+                <button id="b2" href="/user/list/{{this._id}}" onclick="return confirm('are u sure');">delet</button>
+            </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    
+</table>
+</div><br><br>
+<button id="b2" onclick="return call()">go back</button>
+</body>
+<script src="../../public/add.js"></script>
