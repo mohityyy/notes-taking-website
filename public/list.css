@@ -1,0 +1,27 @@
+body{
+    
+    
+    background-color: #2d545e;
+}
+.all{
+    background-color: honeydew;
+    text-align: center;
+    align-items: center;
+    width: 1200px;
+}
+th{
+    border: 1px solid;
+}
+td{
+    border: 1px solid;
+}
+#b2{
+    color: cyan;
+    border-radius: 50px;
+    border-color: darkcyan;
+    background-color: darkcyan;
+}
+#b2:hover{
+    
+    background-color: darkseagreen;
+}
